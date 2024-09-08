@@ -18,5 +18,5 @@ if __name__ == '__main__':
     else:
         logging.basicConfig(level=logging.INFO)
 
-    app.logger.info(f"Starting application on {args.host}:{args.port}")
+    print(f"Starting application on {args.host}:{args.port}")
     app.run(debug=debug, host=args.host, port=args.port)
